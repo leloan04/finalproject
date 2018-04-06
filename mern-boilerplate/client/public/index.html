@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="stylesheet" type="text/css" href="../src/recipetinder.css">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link href="assets/materialize/css/materialize.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Bon Appletit - Healthier lifestyles start with healthier appetites</title>
+  </head>
+
+  <!-- jQuery lib -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<!-- transform2d lib -->
+<script type="text/javascript" src="js/jquery.transform2d.js"></script>
+
+<!-- jTinder lib -->
+<script type="text/javascript" src="js/jquery.jTinder.js"></script>
+
+<!-- jTinder initialization script -->
+<script>$("#tinderslide").jTinder();</script>
+
+  <body>
+    <div id="tinderslide">
+      <ul>
+          <li class="pane1"><div class="img"></div><div>Miami Beach</div><div class="like"></div><div class="dislike"></div></li>
+          <li class="pane2"><div class="img"></div><div>San Francisco</div><div class="like"></div><div class="dislike"></div></li>
+          <li class="pane3"><div class="img"></div><div>Chicago</div><div class="like"></div><div class="dislike"></div></li>
+          <li class="pane4"><div class="img"></div><div>New York</div><div class="like"></div><div class="dislike"></div></li>
+          <li class="pane5"><div class="img"></div><div>Beach</div><div class="like"></div><div class="dislike"></div></li>
+      </ul>
+  </div>
+  </body>
+</html>
