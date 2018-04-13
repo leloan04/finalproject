@@ -8,10 +8,22 @@
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
+    <!-- Bootstrap core CSS -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/grayscale.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../src/recipetinder.css">
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <link href="assets/materialize/css/materialize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="shortcut icon" href="favicon.ico">
+    <!-- slideshow css -->
+    <link href="assets/slideshow/slideshow.css" rel="stylesheet">
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -37,14 +49,141 @@
 <script>$("#tinderslide").jTinder();</script>
 
   <body>
-    <div id="tinderslide">
-      <ul>
-          <li class="pane1"><div class="img"></div><div>Miami Beach</div><div class="like"></div><div class="dislike"></div></li>
-          <li class="pane2"><div class="img"></div><div>San Francisco</div><div class="like"></div><div class="dislike"></div></li>
-          <li class="pane3"><div class="img"></div><div>Chicago</div><div class="like"></div><div class="dislike"></div></li>
-          <li class="pane4"><div class="img"></div><div>New York</div><div class="like"></div><div class="dislike"></div></li>
-          <li class="pane5"><div class="img"></div><div>Beach</div><div class="like"></div><div class="dislike"></div></li>
-      </ul>
-  </div>
+      <body id="page-top">
+
+          <!-- Navigation -->
+          <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container">
+              <a class="navbar-brand js-scroll-trigger" href="#page-top"></a>
+              <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fa fa-bars"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#about">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#download">Recipes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#contact">Sign In</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+      
+          <!-- Intro Header -->
+          <header class="masthead">
+            <div class="intro-body">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-8 mx-auto">
+                    <!-- <h1 class="brand-heading">Bon Appletit</h1>
+                    <p class="intro-text">Healthier lifestyles start with healthier appetites</p> -->
+                    <a class="main-header-logo" href="/">
+                      <img src="assets/images/logo.png" alt="Logo" id="banner-logo">
+                    </a>
+                    <a href="#about" class="btn btn-circle js-scroll-trigger">
+                      <i class="fa fa-angle-double-down animated"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+      
+          <!-- About Section -->
+          <section id="about" class="content-section text-center">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 mx-auto">
+                  <!-- Slideshow container -->
+                  <div class="slideshow-container">
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                      <img src="assets/slideshow/images/acaibowl.jpg" style="width:50%">
+                      <div class="text">Acai Smoothie Breakfast Bowl</div>
+                    </div>
+                  
+                    <div class="mySlides fade">
+                      <img src="assets/slideshow/images/fetachicken.jpg" style="width:50%">
+                      <div class="text">Spinach and Feta Cheese Stuffed Chicken</div>
+                    </div>
+                  
+                    <div class="mySlides fade">
+                      <img src="assets/slideshow/images/citrussalmon.jpg" style="width:50%">
+                      <div class="text">Grilled Citrus Salmon</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="assets/slideshow/images/garlicchicken.jpg" style="width:50%">
+                        <div class="text">Garlic-roasted Chicken Breasts</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="assets/slideshow/images/rasberrygreenteasmoothie.jpg" style="width:50%">
+                        <div class="text">Raspberry Green Tea Smoothie</div>
+                    </div>
+                  
+                  <!-- The dots/circles -->
+                  <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+      
+          <!-- Download Section -->
+          <section id="download" class="download-section content-section text-center">
+            <div class="container">
+              <div class="col-lg-8 mx-auto">
+                  <h2>Sign up to start finding healthier recipes now!</h2>
+                  <form>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput">Email:</label>
+                      <input type="text" class="form-control" id="email" placeholder="jane@doe.com">
+                    </div>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput2">Password:</label>
+                      <input type="text" class="form-control" id="password" placeholder="********">
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="signup-btn">Sign Up</button>
+                  </form>
+              </div>
+            </div>
+          </section>
+    
+          <!-- Footer -->
+          <footer>
+            <div class="container text-center">
+              <p>Copyright &copy; Bon Appletit 2018</p>
+            </div>
+          </footer>
+      
+          <!-- Bootstrap core JavaScript -->
+          <script src="assets/vendor/jquery/jquery.min.js"></script>
+          <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      
+          <!-- Plugin JavaScript -->
+          <script src="assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+      
+          <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+      
+          <!-- Custom scripts for this template -->
+          <script src="assets/js/grayscale.min.js"></script>
+
+          <!-- slideshow js -->
+          <script src="assets/slideshow/slideshow.js"></script>
+      
+        </body>
   </body>
 </html>
