@@ -109,13 +109,23 @@ class App extends Component {
           }  
         }}/>
         <Route exact path = "/home" render = {()=> {
-          if(!loggedIn){
+          if(false){
             return <Redirect to = "/" />
           } else {
             return <Home handleLogout = {this.handleLogout} auth = { this.state.auth }/>
           } 
         }
         }/>
+
+        {/* <Route exact path = "/recipes" render = {()=> {
+          if(false){
+            return <Redirect to = "/" />
+          } else {
+            return <Recipes handleLogout = {this.handleLogout} auth = { this.state.auth }/>
+          } 
+        }
+        }/> */}
+
         </div>
       </Router>
     );
