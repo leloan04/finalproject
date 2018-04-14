@@ -6,23 +6,18 @@ const Home = (props) =>{
 		<div>
 			<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
 			<div class="container">
-				<a class="navbar-brand js-scroll-trigger" href="#page-top"></a>
-				<button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-				Menu
-				<i class="fa fa-bars"></i>
-				</button>
 				<div class="collapse navbar-collapse" id="navbarResponsive">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-					<a class="nav-link js-scroll-trigger" href="#about">Home</a>
-					</li>
-					<li class="nav-item">
-					<a class="nav-link js-scroll-trigger" href="#download">Recipes</a>
-					</li>
-					<li class="nav-item">
-					<a class="nav-link js-scroll-trigger" href="#contact">Sign In</a>
-					</li>
-				</ul>
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#Home">Home</a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#Recipes">Recipes</a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#SignIn">Sign In</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 			</nav>
@@ -53,32 +48,6 @@ const Home = (props) =>{
 						<div class="col-lg-8 mx-auto">
 							{/* <!-- Slideshow container --> */}
 							<div class="slideshow-container">
-
-							{/* <!-- Full-width images with number and caption text --> */}
-								<div class="mySlides fade">
-									<img src={require("../../assets/images/foodiepics/acaibowl.jpg")} style={ {width:"50%"} } />
-									<div class="text">Acai Smoothie Breakfast Bowl</div>
-								</div>
-								
-								<div class="mySlides fade">
-									<img src="assets/slideshow/images/fetachicken.jpg" style={ {width:"50%"} } />
-									<div class="text">Spinach and Feta Cheese Stuffed Chicken</div>
-								</div>
-								
-								<div class="mySlides fade">
-									<img src="assets/slideshow/images/citrussalmon.jpg" style={ {width:"50%"} } />
-									<div class="text">Grilled Citrus Salmon</div>
-								</div>
-				
-								<div class="mySlides fade">
-									<img src="assets/slideshow/images/garlicchicken.jpg" style={ {width:"50%"} } />
-									<div class="text">Garlic-roasted Chicken Breasts</div>
-								</div>
-				
-								<div class="mySlides fade">
-									<img src="assets/slideshow/images/rasberrygreenteasmoothie.jpg" style={ {width:"50%"} } />
-									<div class="text">Raspberry Green Tea Smoothie</div>
-								</div>
 								
 								{/* <!-- The dots/circles --> */}
 								<div style={ {textAlign:"center"} }>
